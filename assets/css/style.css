@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: #18d26e;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
@@ -1308,8 +1308,8 @@ section .container {
 }
 
 .typing-demo {
-  width: 42ch;
-  animation: typing 3s steps(42), blink .5s step-end infinite alternate;
+  width: 23ch;
+  animation: typing 3.5s steps(23), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
