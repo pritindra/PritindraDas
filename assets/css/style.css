@@ -1280,8 +1280,8 @@ section .container {
 }
 
 :root {
-  --shadow-color: rgb(94, 80, 80);
-  --shadow-color-light: rgb(180, 175, 175);
+  --shadow-color: rgb(36, 29, 29);
+  --shadow-color-light: rgb(119, 113, 113);
 }
 
 .logo-1 {
