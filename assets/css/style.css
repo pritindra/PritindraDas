@@ -16,10 +16,10 @@ body {
   background: transparent;
 }
 
-/* body::before {
+body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/back.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -32,7 +32,7 @@ body {
   body::before {
     background-attachment: fixed;
   }
-} */
+}
 
 
 @keyframes move-background {
@@ -68,69 +68,6 @@ body {
 	to { 
 		-webkit-transform: translate3d(1000px, 0px, 0px);
 	}
-}
-
-.background-container{
-	position: fixed;
-	top: 0;
-	left:0;
-	bottom: 0;
-	right: 0;
-}
-
-.stars {
- background: black url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
- position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: block;
-  	z-index: 0;
-}
-
-.twinkling{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-  -ms-animation:move-background 70s linear infinite;
-  -o-animation:move-background 70s linear infinite;
-  -webkit-animation:move-background 70s linear infinite;
-  animation:move-background 70s linear infinite;
-	
-}
-
-.clouds{
-	width:10000px;
-	height: 100%;
-	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-	background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-
-   -moz-animation:move-background 150s linear infinite;
-  -ms-animation:move-background 150s linear infinite;
-  -o-animation:move-background 150s linear infinite;
-  -webkit-animation:move-background 150s linear infinite;
-  animation:move-background 150s linear infinite;
-}
-.images{
-  height: 70vh;
-  width:70vh;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
 }
 
 
@@ -1284,32 +1221,10 @@ section .container {
   --shadow-color-light: rgb(119, 113, 113);
 }
 
-.logo-1 {
-  color: white;
-  animation: neon 3s infinite;
-}
-
-@keyframes neon {
-  0% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  }
-  50% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
-    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
-  }
-  /* 100% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
-    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-  } */
-}
 
 .typing-demo {
   width: 23ch;
-  animation: typing 3.5s steps(24), blink .5s step-end infinite alternate;
+  animation: typing 3s steps(26), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
